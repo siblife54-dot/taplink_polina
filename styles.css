@@ -91,6 +91,50 @@ body {
   padding: 24px;
 }
 
+.section--pain {
+  background:
+    linear-gradient(130deg, rgba(255, 246, 248, 0.86) 0%, rgba(255, 252, 255, 0.92) 100%),
+    var(--surface);
+}
+
+.section--pain .section__head h2 {
+  color: #b23b66;
+}
+
+.section--pain .check-list li::before {
+  background: linear-gradient(140deg, #ff5f8f, #ff8a66);
+  box-shadow: 0 0 0 4px rgba(255, 95, 143, 0.15);
+}
+
+.section--solution {
+  background:
+    linear-gradient(135deg, rgba(238, 255, 250, 0.92) 0%, rgba(235, 246, 255, 0.92) 100%),
+    var(--surface);
+  border-color: rgba(33, 149, 121, 0.2);
+  box-shadow: 0 24px 44px rgba(31, 112, 129, 0.14);
+}
+
+.section--solution .section__head h2 {
+  color: #187966;
+}
+
+.section--solution .benefits li {
+  margin-bottom: 10px;
+  padding: 12px 14px 12px 42px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(24, 121, 102, 0.18);
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.section--solution .benefits li::before {
+  width: 20px;
+  height: 20px;
+  top: 11px;
+  border-radius: 7px;
+  background: linear-gradient(140deg, #1faf7f, #36b8d6);
+  box-shadow: 0 0 0 4px rgba(25, 158, 127, 0.13);
+}
+
 .hero {
   padding: 22px;
   background:
