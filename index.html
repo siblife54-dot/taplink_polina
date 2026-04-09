@@ -11,64 +11,90 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
   />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="ambient ambient--one" aria-hidden="true"></div>
+  <div class="ambient ambient--two" aria-hidden="true"></div>
+  <div class="ambient ambient--three" aria-hidden="true"></div>
+
   <main class="page">
-    <section class="card hero" id="top">
-      <div class="hero__photo-wrap">
-        <img class="hero__photo" id="hero-photo" src="" alt="Полина Акимова" />
-      </div>
-      <p class="badge">Онлайн-программа</p>
+    <section class="hero card" id="top">
+      <p class="badge">APPLE-STYLE FITNESS EXPERIENCE</p>
       <h1 id="hero-title"></h1>
       <p class="lead" id="hero-lead"></p>
-      <ul class="hero__list" id="hero-audience"></ul>
-      <a href="#tariffs" class="btn btn--primary" id="hero-cta"></a>
+
+      <div class="hero__media">
+        <div class="hero__photo-wrap">
+          <img class="hero__photo" id="hero-photo" src="" alt="Полина Акимова" />
+        </div>
+        <div class="hero__quick-info">
+          <h2>Для кого программа</h2>
+          <ul class="hero__list" id="hero-audience"></ul>
+          <a href="#tariffs" class="btn btn--primary" id="hero-cta"></a>
+        </div>
+      </div>
     </section>
 
-    <section class="card" id="pain">
-      <h2>Если ты:</h2>
+    <section class="card section" id="pain">
+      <div class="section__head">
+        <h2>Если ты узнаешь себя</h2>
+        <p>Мы убираем отеки, стресс и хаос в питании системно, мягко и красиво.</p>
+      </div>
       <ul class="check-list" id="pain-list"></ul>
     </section>
 
-    <section class="card" id="solution">
-      <h2>Этот клуб точно для тебя</h2>
-      <p class="section-subtitle">За пару недель ты:</p>
+    <section class="card section" id="solution">
+      <div class="section__head">
+        <h2>Что поменяется за первые недели</h2>
+        <p class="section-subtitle">Заметный рельеф, легкость в теле и больше уверенности в зеркале.</p>
+      </div>
       <ul class="benefits" id="solution-list"></ul>
     </section>
 
-    <section class="card" id="inside">
-      <h2>Внутри тебя ждет:</h2>
+    <section class="card section" id="inside">
+      <div class="section__head">
+        <h2>Что внутри клуба</h2>
+        <p>Полный пакет: питание, тренировки, поддержка и понятные схемы на каждый день.</p>
+      </div>
       <ul class="inside-list" id="inside-list"></ul>
     </section>
 
-    <section class="card" id="result">
-      <h2>В итоге ты:</h2>
+    <section class="card section" id="result">
+      <div class="section__head">
+        <h2>Финальный результат</h2>
+      </div>
       <ul class="result-list" id="result-list"></ul>
     </section>
 
-    <section class="card" id="proof">
-      <h2>Результаты и отзывы</h2>
-      <p class="section-subtitle">Реальные участницы и честная обратная связь.</p>
+    <section class="card section" id="proof">
+      <div class="section__head">
+        <h2>Результаты и отзывы</h2>
+        <p class="section-subtitle">Реальные участницы, реальные изменения без откатов.</p>
+      </div>
 
-      <h3>Отзывы</h3>
+      <h3>Отзывы участниц</h3>
       <div class="gallery" id="reviews-gallery"></div>
 
       <h3>До / После</h3>
       <div class="gallery" id="results-gallery"></div>
     </section>
 
-    <section class="card card--accent" id="tariffs">
-      <h2>Выбери свой формат</h2>
-      <p class="section-subtitle">Стартуй в удобном ритме — самостоятельно или с поддержкой.</p>
+    <section class="card card--accent section" id="tariffs">
+      <div class="section__head">
+        <h2>Выбери свой формат участия</h2>
+        <p class="section-subtitle">Максимум результата: самостоятельно или с ежедневной поддержкой.</p>
+      </div>
       <div class="pricing" id="pricing"></div>
     </section>
 
-    <section class="card card--soft" id="payment">
-      <h2>Оплата</h2>
+    <section class="card card--soft section" id="payment">
+      <div class="section__head">
+        <h2>Оплата</h2>
+      </div>
       <p id="payment-text"></p>
       <p class="small-note">
         Для подключения полноценной онлайн-кассы YooKassa добавь свои ссылки или backend-интеграцию.
